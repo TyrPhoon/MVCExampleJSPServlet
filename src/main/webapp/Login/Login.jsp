@@ -36,14 +36,14 @@
 			padding-left: 15px;
 		}
 		input.lg{
-			background-color: gray;
+			background-color: rgb(41, 207, 69);
 			padding-left:5px;
 			border-radius:2px;
 			display: inline;
 			width: 75px;
 		}
 		input.lg:hover {
-			background-color: blue;
+			background-color: rgb(227, 233, 235);
 		}
 		h3{
 		color: red;

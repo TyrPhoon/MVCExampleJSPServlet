@@ -5,7 +5,7 @@
 <head>
 	<style type="text/css">
 		h3{
-			background-color: blue;
+			background-color: rgb(0, 174, 255);
 			padding: 10px 0 10px 10px;
 		}
 		#form{
@@ -40,7 +40,7 @@
 			margin: 5px 5px;
 			border: 1px solid;
 			border-radius: 3px;
-			background-color: green;
+			background-color: rgb(106, 231, 106);
 			}
 		input[type=submit]:hover{
 			background-color: aqua;

@@ -8,7 +8,7 @@
 	<title>Welcome</title>
 	<style type="text/css">
 		h3{
-			background-color: blue;
+			background-color: rgb(0, 174, 255);
 			padding: 10px 0 10px 10px;
 		}
 		.nhanviens{
