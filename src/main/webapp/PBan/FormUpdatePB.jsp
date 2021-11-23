@@ -17,7 +17,7 @@
 		<%
 		Phongban pb = (Phongban)request.getAttribute("PB");
 		%>
-		<form action="Controller_PB" method="post">
+		<form action="<%=request.getContextPath()%>/Controller_PB" method="post">
 			<table>
 				<div>
 					<table>

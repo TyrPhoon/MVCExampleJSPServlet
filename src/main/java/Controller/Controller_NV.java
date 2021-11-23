@@ -28,7 +28,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/ViewAllNV.jsp";
+			String destination = "/NVien/ViewAllNV.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -39,7 +39,7 @@ public class Controller_NV extends HttpServlet {
 			Nhanvien nv = new Nhanvien();
 			nv = bo.GetNVByID(req.getParameter("IDNV"));
 			req.setAttribute("NV", nv);
-			String destination = "/ViewDetailNV.jsp";
+			String destination = "/NVien/ViewDetailNV.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -51,14 +51,14 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetNVByIDPB(req.getParameter("IDPB"));
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/ViewAllNV.jsp";
+			String destination = "/NVien/ViewAllNV.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
 
 		// TK
 		if (req.getParameter("Mod2") != null) {
-			String destination = "/FormTK.jsp";
+			String destination = "/NVien/FormTK.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -68,7 +68,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Phongban> pbArray = null;
 			pbArray = bo.GetAllPB();
 			req.setAttribute("AllPB", pbArray);
-			String destination = "/FormAdd.jsp";
+			String destination = "/NVien/FormAdd.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -79,7 +79,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/NVUpdate.jsp";
+			String destination = "/NVien/NVUpdate.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -93,7 +93,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Phongban> pbArray = null;
 			pbArray = bo1.GetAllPB();
 			req.setAttribute("AllPB", pbArray);
-			String destination = "/FormUpdate.jsp";
+			String destination = "/NVien/FormUpdate.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -103,7 +103,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/NVDelete.jsp";
+			String destination = "/NVien/NVDelete.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -114,7 +114,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/NVDelete.jsp";
+			String destination = "/NVien/NVDelete.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -125,7 +125,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/NVDeletemulti.jsp";
+			String destination = "/NVien/NVDeletemulti.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -143,7 +143,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/ViewAllNV.jsp";
+			String destination = "/NVien/ViewAllNV.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -156,7 +156,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/NVUpdate.jsp";
+			String destination = "/NVien/NVUpdate.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -184,7 +184,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.SearchNV(query);
 			req.setAttribute("TKNV", nvArray);
-			String destination = "/NVTK.jsp";
+			String destination = "/NVien/NVTK.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -196,7 +196,7 @@ public class Controller_NV extends HttpServlet {
 			ArrayList<Nhanvien> nvArray = null;
 			nvArray = bo.GetAllNV();
 			req.setAttribute("AllNV", nvArray);
-			String destination = "/NVDeletemulti.jsp";
+			String destination = "/NVien/NVDeletemulti.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 

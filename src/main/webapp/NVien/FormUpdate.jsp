@@ -20,7 +20,7 @@
 		<%
 		Nhanvien nv = (Nhanvien) request.getAttribute("NV");
 		%>
-		<form action="Controller_NV" method="post">
+		<form action="<%=request.getContextPath()%>/Controller_NV" method="post">
 			<table>
 				<div>
 					<table>

@@ -25,7 +25,7 @@ public class Controller_PB extends HttpServlet {
 			ArrayList<Phongban> pbArray = null;
 			pbArray = bo.GetAllPB();
 			req.setAttribute("AllPB", pbArray);
-			String destination = "/ViewAllPB.jsp";
+			String destination = "/PBan/ViewAllPB.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -36,7 +36,7 @@ public class Controller_PB extends HttpServlet {
 			ArrayList<Phongban> pbArray = null;
 			pbArray = bo.GetAllPB();
 			req.setAttribute("AllPB", pbArray);
-			String destination = "/PBUpdate.jsp";
+			String destination = "/PBan/PBUpdate.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -46,7 +46,7 @@ public class Controller_PB extends HttpServlet {
 			Phongban pb = new Phongban();
 			pb = bo.GetPBbByIDPB(req.getParameter("IDPBUD"));
 			req.setAttribute("PB", pb);
-			String destination = "/FormUpdatePB.jsp";
+			String destination = "/PBan/FormUpdatePB.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}
@@ -62,7 +62,7 @@ public class Controller_PB extends HttpServlet {
 			ArrayList<Phongban> pbArray = null;
 			pbArray = bo.GetAllPB();
 			req.setAttribute("AllPB", pbArray);
-			String destination = "/PBUpdate.jsp";
+			String destination = "/PBan/PBUpdate.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(req, resp);
 		}

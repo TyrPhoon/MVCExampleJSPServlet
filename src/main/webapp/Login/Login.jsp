@@ -57,7 +57,7 @@
 		<%
 		if (request.getAttribute("message") != null) {
 		%>
-		<p><%=request.getAttribute("message")%></p>
+		<p style="color: red"><%=request.getAttribute("message")%></p>
 		<%
 		}
 		%>
@@ -66,8 +66,8 @@
             <input type="text" name="username" placeholder="Username" >
             <p>Password</p>
             <input type="password" name="password" placeholder="Password">
-            <input class = "lg" type="submit" name="btnOK" value="Login" >
-            <input class = "lg" type="reset" name="btnReset" value="Reset">
+            <input class = "lg" type="submit" name="btnOK" value="Login" style="background-color: green" >
+            <input class = "lg" type="reset" name="btnReset" value="Reset" style="background-color: red">
    		</form>
 	</div>
 </body>

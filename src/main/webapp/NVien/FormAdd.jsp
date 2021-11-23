@@ -17,7 +17,7 @@
 	<%} %>
 	<center>
 		<h2>Thêm sinh viên</h2>
-		<form action="Controller_NV" method="post">
+		<form action="<%=request.getContextPath()%>/Controller_NV" method="post">
 			<table>
 				<div>
 					<table>

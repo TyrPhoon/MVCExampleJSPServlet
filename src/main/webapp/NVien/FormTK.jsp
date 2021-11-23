@@ -16,7 +16,7 @@
 	%>
 	<center>
 		<h2>Tìm kiếm nhân viên</h2>
-		<form action="Controller_NV" method="post">
+		<form action="<%=request.getContextPath()%>/Controller_NV" method="post">
 			<table>
 				<tr>
 					<td>Chọn tiêu chí</td>

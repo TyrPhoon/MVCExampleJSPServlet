@@ -7,9 +7,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome</title>
-
+	<style type="text/css">
+		h3{
+			background-color: blue;
+			padding: 10px 0 10px 10px;
+		}
+		.nhanviens{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		.nhanviens th, .nhanviens td{
+			border: 1px solid;
+			padding: 5px;
+		}
+		.nhanviens th{
+			background-color: yellow;
+		}
+		.nhanviens td{
+			background-color: aqua;
+		}
+	</style>
 </head>
 <body>
+
 	<%
 	if (session.getAttribute("username") != null) {
 	%>
@@ -17,14 +37,14 @@
 	<%
 	}
 	%>
-	<table border="1" width="100%">
-		<caption>Danh sách nhân viên</caption>
+	<h3>Danh sách nhân viên</h3>
+	<table class="nhanviens">
 		<tr>
 			<th>IDNV</th>
 			<th>Họ tên</th>
 			<th>IDPB</th>
 			<th>Địa chỉ</th>
-			<th>Xóa</th>
+			<th>Cập nhật</th>
 		</tr>
 		<%
 		ArrayList<Nhanvien> ArrayNV = (ArrayList<Nhanvien>) request.getAttribute("AllNV");
@@ -36,8 +56,8 @@
 			<td><%=ArrayNV.get(i).getIDPB()%></td>
 			<td><%=ArrayNV.get(i).getDiaChi()%></td>
 			<td><a
-				href="Controller_NV?IDNVDELETE=<%=ArrayNV.get(i).getIDNV()%>">
-					Xóa </a></td>
+				href="Controller_NV?IDNVUD=<%=ArrayNV.get(i).getIDNV()%>"> Cập
+					nhật </a></td>
 		</tr>
 		<%
 		}
