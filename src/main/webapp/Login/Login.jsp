@@ -30,20 +30,35 @@
 		input {
 			width: 600px;
 			height: 30px;
-			display: block;
+			display: inline-block;
 			margin-left: 50px;
 			margin-bottom: 10px;
 			padding-left: 15px;
 		}
-		input.lg{
-			background-color: rgb(41, 207, 69);
-			padding-left:5px;
-			border-radius:2px;
+		
+		input[type=submit]{
+			width: 80px;
+			padding: 5px 0;
+			margin: 5px 5px;
+			margin-left:50px;
+			border: 1px solid;
+			border-radius: 3px;
+			background-color: rgb(106, 231, 106);
 			display: inline;
-			width: 75px;
+			}
+		input[type=submit]:hover{
+			background-color: aqua;
 		}
-		input.lg:hover {
-			background-color: rgb(227, 233, 235);
+		input[type=reset]{
+			width: 80px;
+			padding: 5px 0;
+			margin: 5px 5px;
+			border: 1px solid;
+			border-radius: 3px;
+			background-color: red;
+			}
+		input[type=reset]:hover{
+			background-color: aqua;
 		}
 		h3{
 		color: red;
@@ -52,7 +67,7 @@
 </head>
 <body>
 
-	<div class = "login" >
+		<div class = "login" >
 		<h1>Login</h1>
 		<%
 		if (request.getAttribute("message") != null) {
@@ -65,9 +80,9 @@
 			<p>Password</p>
             <input type="text" name="username" placeholder="Username" >
             <p>Password</p>
-            <input type="password" name="password" placeholder="Password">
-            <input class = "lg" type="submit" name="btnOK" value="Login" style="background-color: green" >
-            <input class = "lg" type="reset" name="btnReset" value="Reset" style="background-color: red">
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="submit" name="btnOK" value="Login" >
+            <input type="reset" name="btnReset" value="Reset">
    		</form>
 	</div>
 </body>

@@ -26,6 +26,19 @@
 		.nhanviens td{
 			background-color: aqua;
 		}
+		input[type=submit]{
+			width: 80px;
+			padding: 5px 0;
+			margin: 5px 5px;
+			margin-left:50px;
+			border: 1px solid;
+			border-radius: 3px;
+			background-color: rgb(106, 231, 106);
+			display: inline;
+			}
+		input[type=submit]:hover{
+			background-color: red;
+		}
 	</style>
 </head>
 <body>

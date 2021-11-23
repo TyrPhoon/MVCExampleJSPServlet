@@ -6,18 +6,37 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome</title>
-
+<style type="text/css">
+		h3{
+			background-color: rgb(0, 174, 255);
+			padding: 10px 0 10px 10px;
+		}
+		.phongbans{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		.phongbans th, .phongbans td{
+			border: 1px solid;
+			padding: 5px;
+		}
+		.phongbans th{
+			background-color: yellow;
+		}
+		.phongbans td{
+			background-color: aqua;
+		}
+	</style>
 </head>
 <body>
-
 	<%
-	if (session.getAttribute("username") != null) {
-	%>
-	<h2 style="text-align: right"><%=session.getAttribute("username")%></h2>
-	<%
-	}
-	%>
-	<table border="1" width="100%">
+			if(session.getAttribute("username")!=null)
+			{
+		%>
+			<h2 style="text-align: right"><%=session.getAttribute("username") %></h2>
+		<%} %>
+		
+	<h3>Danh sách phòng ban</h3>
+	<table class="phongbans">
 		<caption>Danh sách phòng ban</caption>
 		<tr>
 			<th>IDPB</th>
